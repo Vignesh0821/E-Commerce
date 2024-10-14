@@ -1,0 +1,358 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Oswald", sans-serif;
+    background-color:  #ebd3a4;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    background-color: beige;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+}
+.navbar h1{
+    font-family: "Londrina Sketch", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: black;
+    font-size: 45px;
+    padding-left: 20px;
+  }
+
+.navbar_links {
+    display: flex;
+    column-gap: 30px;
+    padding-right: 30px;
+    
+}
+.navlink a{
+    text-decoration: none;
+    color: rgb(28, 28, 37);
+}
+.navlink a:hover{
+    text-decoration: underline;
+    color: rgb(28, 28, 37);
+}
+.toggle_menu{
+    display: none;
+    
+}
+.side-navbar{
+    background-color: rgba(0, 0, 0, 0.974);
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: aliceblue;
+    transition: 2s;
+}
+.side-navlink{
+    margin-bottom: 30px;
+    
+}
+.side-navlink a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.side-navlink a:hover{
+    text-decoration: underline;
+    color: rgb(253, 253, 254);
+}
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    margin-top: 80px;
+}
+.header button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+}
+.service{
+    padding: 20px;
+}
+
+.service-container1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-container2{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 10px;
+}
+.service-container2 div{
+    background-color: beige;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+.new-arrival{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.new-arrival-container{
+    position: relative;
+    flex-basis: 20%;
+}
+.new-arrival-container button{
+    padding: 5% 10%;
+    margin-top: 10px;
+    color: #191d23;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    border-radius: 10px;
+    border: none;
+}
+
+.join{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    column-gap: 20px;
+}
+.search{
+    padding: 11px;
+    width: 70vw;
+    margin-bottom: 10px;
+    border: 3px  solid black;
+
+}
+.join button{
+    margin-top: 10px;
+    color: beige;
+    background-color: black;
+    padding: 10PX;
+    border-radius: 10px;
+    border: none;
+}
+.footer{
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.804);
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    color: white;
+    padding: 30px;
+    margin-top: 70px;
+    
+    
+}
+.footer-container{
+    gap: 20px;
+}
+
+.subscribe-bar{
+    background-color: rgba(0, 0, 0, 0.974);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: -100;
+    left: 0%;
+    color: aliceblue;
+    transition: 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.subcribe{
+    height: 400px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(170, 166, 166, 0.236);
+    padding: 20px;
+}
+.lh{
+    font-size: 30px;
+    text-align: center;
+}
+
+.subcribe input{
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+}
+
+.btn{
+    text-align: center;
+    
+}
+.sub_button{
+    height: 40px;
+    width: 100px;
+    
+}
+.product-section{
+    margin-top: 30px;
+}
+
+.product-search{
+    width: 75%;
+    border: 3px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+    margin-top: 120px;
+}
+.product-search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    font-size: 15px;
+
+
+}
+.product-search input:focus{
+    outline: none;
+}
+.product{
+    padding: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+    margin-top: 50px;
+}
+.product-box{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    flex-basis: 20%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+/* .product-box img:hover{
+    width: 220px;
+    height: 275px;
+   
+} */
+.product-box a{
+    text-decoration: none;
+    color: black;
+}
+
+.title{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.Unavailable{
+    margin-top: 250px;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.contact-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    height: 65vh;
+    width: 70vw;
+    background-color: rgba(16, 15, 15, 0.945); 
+    padding: 40px;
+    color: white;
+    border-radius: 15px;
+    gap: 35px;
+}
+.detail{
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+}
+.mgs{
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+}
+.submit-btn{
+    height: 35px;
+    width: 75px;
+    font-size: 15px;
+    color: aliceblue;
+    padding: 5px;
+    background-color: rgba(8, 12, 252, 0.955);
+    border: none;
+}
+
+.dress-name{
+    font-size: 20px;
+}
+.price{
+    font-size: 15px;
+}
+.offer{
+    text-decoration: line-through;
+}
+.cart{
+    width: 70px;
+    height: 30px;
+    background-color: rgb(242, 112, 25);
+    color: black;
+    font-weight: 600;
+}
+.cart:hover{
+    background-color: rgb(237, 138, 73);
+
+}
+/* media query for screen width */
+
+@media screen and (max-width:650px){
+
+    
+    .toggle_menu{
+        display: block;
+        padding-right: 20px;
+    }
+    .navbar_links{
+        display: none;
+    }
+    .header-img{
+        display: none;
+    }
+    .service-container1{
+        display: none;
+    }
+    .service-container2{
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyntra</title>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <h1>Eyntra 絵</h1>
+
+        <div class="navbar_links">
+            <p class="navlink"><a href="index.html">Home</a></p>
+            <p class="navlink"><a href="collection.html">Collection</a></p>
+            <p class="navlink"><a href="contact.html">Contact</a></p>
+        </div>
+
+        <div class="toggle_menu" onclick="showNavbar()">
+           <i class="fa-solid fa-bars" ></i> 
+        </div>
+    </nav>
+
+    <!-- side navbar -->
+     <div class="side-navbar">
+        <p style="text-align :right;" onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+        <div class="side_navbar_links">
+            <p class="side-navlink"><a href="index.html">Home</a></p>
+            <p class="side-navlink"><a href="collection.html">Collection</a></p>
+            <p class="side-navlink"><a href="contact.html">Contact</a></p>
+        </div>
+     </div>
+
+    <div class="product-section">
+        <form class="product-search">
+            <input type="text" id="search" placeholder="Search" onkeyup="check(event)">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+        <h2 class="title">Men's Pant Collection</h2>
+        <div class="product" id="product">
+           <div class="product-box">
+             <a href="cottonpant.html">
+              <img src="images/cotton.jpg" alt="" height="250px" width="200px">
+              <p id="name">Cotton Pants</p>
+             </a>
+           </div>
+           <div class="product-box">
+            <a href="denim_pant.html">
+              <img src="images/jean.jpg" alt="" height="250px" width="200px">
+              <p id="name">Denims Pants</p>
+            </a>
+          </div>
+          <div class="product-box">
+              <a href="cargo.html">
+                <img src="images/cargo.jpeg" alt="" height="250px" width="200px">
+                <p id="name">Cargo Pants</p>
+              </a>
+          </div>
+          <!-- <div class="product-box">
+            <a href="cropped.html">
+              <img src="images/cropped.jpeg" alt="" height="250px" width="200px">
+              <p id="name">Cropped pants</p>
+            </a>
+          </div> -->
+          <!-- <div class="product-box">
+            <a href=""></a>
+            <img src="images/western.jpg" alt="" height="250px" width="200px">
+            <p id="name">Women's western</p>
+          </div>
+          <div class="product-box">
+           <a href="">
+            <img src="images/saree.jpg" alt="" height="250px" width="200px">
+            <p id="name">Saree Collection</p>
+           </a>
+         </div>
+         <div class="product-box">
+           <a href="">
+            <img src="images/party wear.jpg" alt="" height="250px" width="200px">
+            <p id="name">Women's Party Wear</p>
+           </a>
+         </div>
+         <div class="product-box">
+           <a href="">
+            <img src="images/kurti.jpg" alt="" height="250px" width="200px">
+            <p id="name">Women's Kurti & sets</p>
+           </a>
+         </div> -->
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="box1">
+                <h1 class="heading">Eyntra</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing.
+                    <br>Dolore ratione repellendus deleniti?</p>
+                <div class="icon">
+                    <i class="fa-brands fa-instagram" style="color: white;"></i>
+                    <i class="fa-brands fa-twitter" style="color: white;"></i>
+                    <i class="fa-brands fa-facebook" style="color: white;"></i>
+                </div>
+            </div>
+
+        </div>
+        <p>@2024 Eyntra.com</p>
+
+    </div>
+
+
+
+     <script src="collection.js"></script>
+     <script src="main.js"></script>
+
+</body>
+</html>
